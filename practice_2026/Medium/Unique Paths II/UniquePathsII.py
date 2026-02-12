@@ -28,6 +28,7 @@ def uniquePathsWithObstacles(obstacleGrid: list[list[int]]) -> int:
     for r in range(m):
         for c in range(n):
             if obstacleGrid[r][c] == 1:
+                dp[r][c] = 0
                 continue
             if r == 0 and c == 0:
                 continue
